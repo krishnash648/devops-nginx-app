@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  web:
+    image: krishna149/devops-nginx-app:latest
+    container_name: webapp
+    ports:
+      - "80:80"
+    restart: unless-stopped
